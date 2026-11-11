@@ -60,7 +60,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    transition: all 0.7s ease;
+    transition: top 2.5s ease-in-out, left 2.5s ease-in-out, transform 1.4s ease;
     cursor: pointer;
 }
 
@@ -84,17 +84,17 @@ body {
     }
 }
 
-.Alice-in-Chains-Album-Container {
+.AIC-Album-Container {
     width: 205px;
     height:auto;
     position: absolute;
-    top: 575px;
-    left: 150px;
+    top: 588px;
+    left: 160px;
     transform: rotate(15deg);
     z-index: 12;
 }
 
-.Alice-in-Chains-Album {
+.AIC-Album {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -103,7 +103,7 @@ body {
     display: block;
 }
 
-.Alice-in-Chains-Record {
+.AIC-Record {
     width: 175px;
     height:auto;
     position: absolute;
@@ -111,17 +111,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    transition: all 1.4s ease;
+    transition: top 2.5s ease-in-out, left 2.5s ease-in-out, transform 1.4s ease;
     cursor: pointer;
 }
 
-.Alice-in-Chains-Album-Container:hover .Alice-in-Chains-Record:not(.is-playing) {
+.AIC-Album-Container:hover .AIC-Record:not(.is-playing) {
     transform: translate(calc(-50% + 120px), -50%);
 }
 
-.Alice-in-Chains-Record.is-playing {
-    top: -79px;
-    left: 613px;
+.AIC-Record.is-playing {
+    top: -90px;
+    left: 600px;
     z-index: 15;
     animation: spin-record 3s linear infinite;
 }
@@ -135,13 +135,53 @@ body {
     }
 }
 
-
-.Ovven-Album {
+.Hole-Album-Container {
     width: 205px;
-    height:auto;
+    height: auto;
     position: absolute;
-    top: 225px;
-    left: 1050px;
+    top: 524px;
+    left: 7px;
     transform: rotate(35deg);
+    z-index: 12;
 }
 
+.Hole-Album {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.Hole-Record {
+    width: 175px;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: top 2.5s ease-in-out, left 2.5s ease-in-out, transform 1.4s ease;
+    cursor: pointer;
+}
+
+.Hole-Album-Container:hover .Hole-Record:not(.is-playing) {
+    transform: translate(calc(-50% + 120px), -50%);
+}
+
+.Hole-Record.is-playing {
+    top: 646px;
+    left: 186px;
+    z-index: 15;
+    animation: spin-record 3s linear 2s infinite;
+}
+
+@keyframes spin-record {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
