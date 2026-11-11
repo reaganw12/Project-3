@@ -23,11 +23,35 @@
 </head>
 
 <body>
-  <!-- Place your site's HTML here -->
-  <p>This text will display on your site! Jan 1st</p>
-  <div class="Record-Player-Blank">
-    <img src="./img/Record Player Blank.webp">
+  <img src="./img/Record Player Blank.webp" class="Record-Player-Blank">
+  
+  <div class="TSP-Album-Container">
+    <img src="./img/TSP Album.webp" class="TSP-Album">
+    <img src="./img/TSP Record.webp" class="TSP-Record">
   </div>
+
+  <script>
+    const tsprecord = document.querySelector('.TSP-Record');
+
+    tsprecord.addEventListener('click', function() {
+      tsprecord.classList.toggle('is-playing');
+    });
+  </script>
+
+  <div class="Alice-in-Chains-Album-Container">
+    <img src="./img/Alice in Chains.jpg" class="Alice-in-Chains-Album">
+    <img src="./img/Alice in Chains Record.webp" class="Alice-in-Chains-Record">
+  </div>
+ 
+  <script>
+    const aliceinchainsrecord = document.querySelector('.Alice-in-Chains-Record');
+
+    aliceinchainsrecord.addEventListener('click', function() {
+      aliceinchainsrecord.classList.toggle('is-playing');
+    });
+  </script>
+  
+  <img src="./img/Ovven.jpg" class="Ovven-Album">
 
   <script src="js/main.js"></script>
 

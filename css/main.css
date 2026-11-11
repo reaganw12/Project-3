@@ -8,9 +8,124 @@ body {
 }
 
 .Record-Player-Blank {
+    width: 315px;
+    height: auto;
     position: absolute;
-    top: 550px;
-    left: 600px;
+    top: 600px;
+    left: 725px;
     z-index: 10;
 
 }
+
+.TSP-Album-Container {
+    width: 205px;
+    height:auto;
+    position: absolute;
+    top: 75px;
+    left: 425px;
+    transform: rotate(-15deg);
+    z-index: 12;
+}
+
+.TSP-Album {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.TSP-Record {
+    width: 175px;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+.TSP-Album-Container:hover .TSP-Record:not(.is-playing) {
+    transform: translate(calc(-50% + 120px), -50%);
+}
+
+.TSP-Record.is-playing {
+    top: 646px;
+    left: 186px;
+    z-index: 15;
+    animation: spin-record 3s linear infinite;
+}
+
+@keyframes spin-record {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.Alice-in-Chains-Album-Container {
+    width: 205px;
+    height:auto;
+    position: absolute;
+    top: 575px;
+    left: 150px;
+    transform: rotate(15deg);
+    z-index: 12;
+}
+
+.Alice-in-Chains-Album {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+.Alice-in-Chains-Record {
+    width: 175px;
+    height:auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all 1.4s ease;
+    cursor: pointer;
+}
+
+.Alice-in-Chains-Album-Container:hover .Alice-in-Chains-Record:not(.is-playing) {
+    transform: translate(calc(-50% + 120px), -50%);
+}
+
+.Alice-in-Chains-Record.is-playing {
+    top: -79px;
+    left: 613px;
+    z-index: 15;
+    animation: spin-record 3s linear infinite;
+}
+
+@keyframes spin-record {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.Ovven-Album {
+    width: 205px;
+    height:auto;
+    position: absolute;
+    top: 225px;
+    left: 1050px;
+    transform: rotate(35deg);
+}
+
