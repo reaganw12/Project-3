@@ -50,6 +50,7 @@ body {
     position: relative;
     z-index: 2;
     display: block;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 .TSP-Record {
@@ -101,6 +102,7 @@ body {
     position: relative;
     z-index: 2;
     display: block;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 .AIC-Record {
@@ -139,8 +141,8 @@ body {
     width: 205px;
     height: auto;
     position: absolute;
-    top: 524px;
-    left: 7px;
+    top: 225px;
+    left: 1050px;
     transform: rotate(35deg);
     z-index: 12;
 }
@@ -152,6 +154,7 @@ body {
     position: relative;
     z-index: 2;
     display: block;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 
 .Hole-Record {
@@ -171,8 +174,8 @@ body {
 }
 
 .Hole-Record.is-playing {
-    top: 646px;
-    left: 186px;
+    top: 524px;
+    left: 7px;
     z-index: 15;
     animation: spin-record 3s linear 2s infinite;
 }
